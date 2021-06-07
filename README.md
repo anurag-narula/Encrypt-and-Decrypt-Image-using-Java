@@ -1,9 +1,9 @@
 # Image-incryption-and-decryption-in-java
 
 **How to use this application**
-1. Enter any encyption key in the text field.
+1. Enter any encryption key in the text field.
 2. Click on the button and select your image.
-3. After selection your image, your image will be encypted. (It can take 2-3 seconds)
-4. To decypt the image, enter the key and again click on the button 
-5. select the image
-6. your image will be decrypted. (It can take 2-3 seconds)
+3. After selecting your image, image will be encypted. (It may take 2-4 seconds)
+4. To decypt the image, enter the correct key and again click on the button 
+5. Select the encrypted image
+6. your image will be decrypted. (It may take 2-3 seconds)

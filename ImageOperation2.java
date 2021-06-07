@@ -5,9 +5,12 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
@@ -49,8 +52,15 @@ public class ImageOperation2 {
 		System.out.println("this is testing");
 
 		JFrame f = new JFrame();
+		
+		JLabel label2 = new JLabel();  	//JLabel will print our text as it is on our GUI
+		label2.setText("This project is developed by Anurag");
+		//label2.setBounds(null);
+		ImageIcon image = new ImageIcon("C://Users//ANURAG//Desktop/encryption.png");		// will show Instructions image on my GUI
+		JLabel i = new JLabel(image);
+		
 		f.setTitle("Image Encryption/Decryption");
-		f.setSize(400,400);
+		f.setSize(700,350);
 		f.setLocationRelativeTo(null);   //will bring our external GUI to center of screen	
 		f.setResizable(false);		//will not allow user to resize the application by dragging from corner
 
@@ -74,7 +84,7 @@ public class ImageOperation2 {
 
 		//creating button for GUI
 		JButton button = new JButton();
-		button.setText("Image Encrypt");
+		button.setText("Select Image");
 		button.setFont(font);
 
 
@@ -94,10 +104,11 @@ public class ImageOperation2 {
 		});
 
 		f.setLayout(new FlowLayout());		//will allow my window to drag it anywhere on the screen
-
-
+		
+		f.add(label2);
 		f.add(button);
 		f.add(textField);
+		f.add(i);
 		f.setVisible(true);	
 	}
 
